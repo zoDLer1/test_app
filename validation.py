@@ -12,7 +12,7 @@ class Validators:
 
     @classmethod
     def is_date(cls, value):
-        return re.match(r'^(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])/(19\d\d|20\d\d|21\d\d)$', value) or re.match(r'^(19\d\d|20\d\d|21\d\d)/(0[1-9]|1[0-2])/(0[1-9]|[12][0-9]|3[01])$', value)
+        return bool(re.match(r'^(0[1-9]|1[0-2])[/\.-](0[1-9]|[12][0-9]|3[01])[/\.-](19\d\d|20\d\d|21\d\d)$', value) or re.match(r'^(19\d\d|20\d\d|21\d\d)[/\.-](0[1-9]|1[0-2])[/\.-](0[1-9]|[12][0-9]|3[01])$', value))
 
 class Validation:
 
@@ -31,3 +31,4 @@ class Validation:
                 return type
         return cls.DEFAULT_TYPE
 
+print(Validators.is_date('12-12-2042'))
