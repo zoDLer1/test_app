@@ -1,0 +1,35 @@
+{
+    "_default": {
+        "1": {
+            "name": "User Registration",
+            "user_name": "text",
+            "email": "email",
+            "password": "text",
+            "created_at": "date"
+        },
+        "2": {
+            "name": "Product Order",
+            "customer_name": "text",
+            "email": "email",
+            "phone_number": "phone",
+            "product_name": "text",
+            "quantity": "text"
+        },
+        "3": {
+            "name": "Feedback Form",
+            "user_name": "text",
+            "email": "email",
+            "phone_number": "phone",
+            "feedback_message": "text",
+            "created_at": "date"
+        },
+        "4": {
+            "name": "Survey Form",
+            "participant_name": "text",
+            "email": "email",
+            "age": "text",
+            "feedback": "text",
+            "created_at": "date"
+        }
+    }
+}
