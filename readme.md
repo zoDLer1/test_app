@@ -17,7 +17,7 @@
 
    ```bash
    git clone https://github.com/zoDLer1/test_app
-   cd form_app
+   cd test_app
 2. Установите зависимости:
     ```bash
     pip install -r requirements.txt
