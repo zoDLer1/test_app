@@ -37,7 +37,7 @@
     curl -X POST -d "user_name=John&email=john@example.com" http://127.0.0.1:5000/get_form
     ```
 ### Тестирование
-Для запуска тестов:
+Команда для запуска тестов (запускать в папке test_app):
 ```bash
 pytest
 ```
